@@ -33,6 +33,4 @@ function getProfile(username) {
 //getProfile("omarnizamaldeen");
 //getProfile("chalkers");
 const users = ["chalkers", "omarnizamaldeen"];
-users.forEach( username => {
-  getProfile(username);
-});
+users.forEach( getProfile );
