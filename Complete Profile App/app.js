@@ -2,7 +2,7 @@ const https = require('https');
 // Function to print message to the console
 
 function printMessage(username, badgeCount, points) {
-  const message = `${username} has ${badgeCount} total badge(s) and ${points} poimts in JavaScript`;
+  const message = `${username} has ${badgeCount} total badge(s) and ${points} points in JavaScript`;
   console.log(message);
 }
 // printMessage("Omar Nizam Aldeen", 100, 2000000);
@@ -32,5 +32,10 @@ function getProfile(username) {
 }
 //getProfile("omarnizamaldeen");
 //getProfile("chalkers");
-const users = ["chalkers", "omarnizamaldeen"];
+console.log();
+const users = process.argv.slice(2);
 users.forEach( getProfile );
+
+
+
+// command line argument : node app.js chalkers omarnizamaldeen
