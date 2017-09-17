@@ -27,7 +27,6 @@ function getProfile(username) {
 
 
     //Print the data
-
   });
 }
 //getProfile("omarnizamaldeen");
